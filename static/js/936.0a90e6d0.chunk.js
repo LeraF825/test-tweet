@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunktest_tweet=self.webpackChunktest_tweet||[]).push([[936],{936:function(e,t,s){s.r(t),s.d(t,{default:function(){return u}});var n="Home_title__L087v",r=s(126),c=s(184),u=function(){return(0,c.jsxs)("h1",{className:n,children:["Wellcome to Home page",(0,c.jsx)(r.K8J,{size:"1.5rem",color:"red"})]})}}}]);
+//# sourceMappingURL=936.0a90e6d0.chunk.js.map
