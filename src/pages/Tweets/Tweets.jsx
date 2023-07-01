@@ -8,16 +8,15 @@ import Pagination from 'components/Pagination/Pagination';
 
 const Tweets = ()=>{
     const [users, setUsers] = useState([]);
-    const [loading, setLoading] = useState(false);
     const [currentPage, setCurrentPage] = useState(1);
     const [perPage] = useState(3);
 
     useEffect(()=>{
         const getUsers = async()=>{
-            setLoading(true)
+            
             const res = await axios.get('https://648846650e2469c038fd6280.mockapi.io/users')
             setUsers(res.data)
-            setLoading(false)
+            
         }
         getUsers()
     },[])
@@ -32,7 +31,7 @@ const Tweets = ()=>{
 
     return(
         <div className={s.container}> 
-        <TweetCard users={currentUser} setUsers={setUsers} />
+        <TweetCard users={currentUser} setUsers={setUsers}  />
             <Pagination 
             perPage={perPage}
             totalUsers={users.length}
